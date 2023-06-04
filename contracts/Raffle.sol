@@ -14,7 +14,7 @@ error Raffle__UpkeepNotNeeded(uint256 currentBalance, uint256 numPlayers, uint25
 /**
  * @title A sample Raffle Contract
  * @author Thomas vL
- * @notice This contract is for creating an untamperable decentralized smart contract
+ * @notice This contract is for creating an untamperable decentralized smart contract lottery
  * @dev This implements Chainlink VRF v2 and Chainlink Keepers
  */
 contract Raffle is VRFConsumerBaseV2, KeeperCompatibleInterface {
@@ -47,7 +47,7 @@ contract Raffle is VRFConsumerBaseV2, KeeperCompatibleInterface {
 
     /* Functions */
     constructor(
-        address vrfCoordinatorV2,
+        address vrfCoordinatorV2, // contract - ( we are going to need to deploy some mocks for this )
         uint256 entranceFee,
         bytes32 gasLane,
         uint64 subscriptionId,
