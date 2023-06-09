@@ -27,6 +27,12 @@ module.exports = {
             accounts: [PRIVATE_KEY],
         },
     },
+    etherscan: {
+        // yarn hardhat verify --network <NETWORK> <CONTRACT_ADDRESS> <CONSTRUCTOR_PARAMETERS>
+        apiKey: {
+            sepolia: ETHERSCAN_API_KEY,
+        },
+    },
     gasReporter: {
         enabled: false,
         currency: "USD",
